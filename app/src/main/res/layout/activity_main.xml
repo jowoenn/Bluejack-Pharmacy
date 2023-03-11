@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Register">
+
+
+    <TextView
+        android:id="@+id/titleRegister"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensansbold"
+        android:text="REGISTER"
+        android:textAlignment="center"
+        android:textColor="@color/blueshadow"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/registerTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598">
+
+        <EditText
+            android:id="@+id/userName"
+            android:inputType="textPersonName"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/form_field"
+            android:fontFamily="@font/opensanslight"
+            android:hint="Username"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/userEmail"
+            android:inputType="textEmailAddress"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/form_field"
+            android:fontFamily="@font/opensanslight"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPassword"
+            android:inputType="textPassword"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/form_field"
+            android:fontFamily="@font/opensanslight"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/gray"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPasswordConfirm"
+            android:inputType="textPassword"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/form_field"
+            android:fontFamily="@font/opensanslight"
+            android:gravity="center_vertical"
+            android:hint="Confirm Password"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/userNumber"
+            android:inputType="number"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/form_field"
+            android:fontFamily="@font/opensanslight"
+            android:hint="Phone Number"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensanslight"
+        android:text="Dont have an account? Register"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="REGISTER"
+        android:textColor="@color/bluelight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Register">
+
+
+    <TextView
+        android:id="@+id/titleLogin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensansbold"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textColor="@color/blueshadow"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/registerTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/registerTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598">
+
+        <EditText
+            android:id="@+id/userEmail2"
+            android:inputType="textEmailAddress"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/form_field"
+            android:fontFamily="@font/opensanslight"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPassword2"
+            android:inputType="textPassword"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/form_field"
+            android:fontFamily="@font/opensanslight"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensanslight"
+        android:text="Dont have an account? Register"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="LOGIN"
+        android:textColor="@color/bluelight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
